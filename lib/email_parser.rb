@@ -9,7 +9,7 @@ class EmailParser
   attr_accessor :emails
 
   def parse
-    @emails.scan(/[a-zA-Z@.]+/)
+    @emails.split(/[a-zA-Z@.]+/)
   end
 
 
